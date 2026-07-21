@@ -25,7 +25,7 @@ def main(page: ft.Page):
     conn.commit()
 
     # --- 2. Elemen UI Form Input ---
-    txt_kategori = ft.TextField(label="Kategori", placeholder="Misal: Makan, Gaji", expand=True)
+    txt_kategori = ft.TextField(label="Kategori", hint_text="Misal: Makan, Gaji", expand=True)
     txt_nominal = ft.TextField(label="Nominal (Rp)", keyboard_type=ft.KeyboardType.NUMBER, expand=True)
     txt_keterangan = ft.TextField(label="Keterangan (Opsional)", expand=True)
     dd_jenis = ft.Dropdown(
